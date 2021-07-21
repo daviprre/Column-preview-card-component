@@ -1,1 +1,44 @@
+*{
+    font-size: 62.5%; /* Ajuste de letra para utilizar el rem para el tamaño de letra */
+    margin:0;
+    padding: 0;
+    /*Color's cards*/
+    --Orange: hsl(31, 77%, 52%);
+    --Cian: hsl(184, 100%, 22%);
+    --Dark-cian: hsl(179, 100%, 13%);
+    /*Color's others*/
+    --White: hsla(0, 0%, 100%, 0.75);
+    --Gray: hsl(0, 0%, 95%); /*Background, buttons borders, headings*/
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--Gray);
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-cards{
+    display: flex;
+    width: 60%;
+    height: 60%;
+}
+.wrapper-cards article{
+    width: 33.33%;
+}
+.wrapper-cards .card-one{
+    background-color: var(--Orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 
+}
+.wrapper-cards .card-two{
+    background-color: var(--Cian);
+}
+
+.wrapper-cards .card-three{
+    background-color: var(--Dark-cian);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
