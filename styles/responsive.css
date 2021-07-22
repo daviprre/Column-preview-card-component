@@ -1,0 +1,29 @@
+@media screen and (max-width: 700px){
+    body{
+        width: auto;
+        height: auto;
+    }
+    .wrapper-cards{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .wrapper-cards article{
+        height: 80vh;
+        width: 70%;
+    }
+    .wrapper-cards .card-one{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        margin-top: 20vh;
+    }
+    .wrapper-cards .card-three{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-bottom: 20vh;
+    }
+
+
+}
