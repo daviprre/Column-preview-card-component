@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 *{
     font-size: 62.5%; /* Ajuste de letra para utilizar el rem para el tamaño de letra */
     margin:0;
@@ -19,18 +21,28 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .wrapper-cards{
     display: flex;
     width: 60%;
-    height: 60%;
+    height: 70%;
 }
 .wrapper-cards article{
     width: 33.33%;
+}
+.wrapper-cards article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 4%;
+
 }
 .wrapper-cards .card-one{
     background-color: var(--Orange);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+
 
 }
 .wrapper-cards .card-two{
@@ -41,4 +53,59 @@ body{
     background-color: var(--Dark-cian);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+.wrapper-cards article img{
+    width: 25%;
+    margin-top: -20px;
+}
+.wrapper-cards article h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--Gray);
+    margin-top: -30px;
+}
+.wrapper-cards article p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    width: 80%;
+    letter-spacing: 0.03rem;
+    line-height: 1.8rem;
+    color: var(--White);
+    margin-top: -30px;
+}
+.wrapper-cards article button{
+    width: 60%;
+    height: 10%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.04rem;
+    border: none;
+    border-radius: 30px;
+}
+.wrapper-cards article button:hover{
+    background-color: transparent   ;
+    border: 2px solid var(--Gray);
+    color: var(--Gray);
+    cursor: pointer;
+}
+.wrapper-cards .card-one .card-one__button{
+    color: var(--Orange);
+}
+.wrapper-cards .card-one .card-one__button:hover{
+    color: var(--Gray);
+}
+.wrapper-cards .card-two .card-two__button{
+    color: var(--Cian);
+}
+.wrapper-cards .card-two .card-two__button:hover{
+    color: var(--Gray);
+}
+.wrapper-cards .card-three .card-three__button{
+    color: var(--Dark-cian);
+}
+.wrapper-cards .card-three .card-three__button:hover{
+    color: var(--Gray);
 }
